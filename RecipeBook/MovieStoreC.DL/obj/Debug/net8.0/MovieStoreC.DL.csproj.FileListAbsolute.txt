@@ -1,0 +1,16 @@
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\bin\Debug\net8.0\MovieStoreC.DL.deps.json
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\bin\Debug\net8.0\MovieStoreC.DL.dll
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\bin\Debug\net8.0\MovieStoreC.DL.pdb
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\bin\Debug\net8.0\MovieStoreC.Models.dll
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\bin\Debug\net8.0\MovieStoreC.Models.pdb
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\obj\Debug\net8.0\MovieStoreC.DL.csproj.AssemblyReference.cache
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\obj\Debug\net8.0\MovieStoreC.DL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\obj\Debug\net8.0\MovieStoreC.DL.AssemblyInfoInputs.cache
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\obj\Debug\net8.0\MovieStoreC.DL.AssemblyInfo.cs
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\obj\Debug\net8.0\MovieStoreC.DL.csproj.CoreCompileInputs.cache
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\obj\Debug\net8.0\MovieStoreC.DL.sourcelink.json
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\obj\Debug\net8.0\MovieSto.A2B7230F.Up2Date
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\obj\Debug\net8.0\MovieStoreC.DL.dll
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\obj\Debug\net8.0\refint\MovieStoreC.DL.dll
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\obj\Debug\net8.0\MovieStoreC.DL.pdb
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.DL\obj\Debug\net8.0\ref\MovieStoreC.DL.dll

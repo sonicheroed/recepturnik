@@ -1,0 +1,12 @@
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\bin\Debug\net8.0\MovieStoreC.Models.deps.json
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\bin\Debug\net8.0\MovieStoreC.Models.dll
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\bin\Debug\net8.0\MovieStoreC.Models.pdb
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\obj\Debug\net8.0\MovieStoreC.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\obj\Debug\net8.0\MovieStoreC.Models.AssemblyInfoInputs.cache
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\obj\Debug\net8.0\MovieStoreC.Models.AssemblyInfo.cs
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\obj\Debug\net8.0\MovieStoreC.Models.csproj.CoreCompileInputs.cache
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\obj\Debug\net8.0\MovieStoreC.Models.sourcelink.json
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\obj\Debug\net8.0\MovieStoreC.Models.dll
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\obj\Debug\net8.0\refint\MovieStoreC.Models.dll
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\obj\Debug\net8.0\MovieStoreC.Models.pdb
+D:\Microsoft\Visual Studio\cs2\MovieStoreC\MovieStoreC.Models\obj\Debug\net8.0\ref\MovieStoreC.Models.dll

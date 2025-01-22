@@ -1,0 +1,16 @@
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\bin\Debug\net8.0\RecipeBook.DL.deps.json
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\bin\Debug\net8.0\RecipeBook.DL.dll
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\bin\Debug\net8.0\RecipeBook.DL.pdb
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\bin\Debug\net8.0\RecipeBook.Models.dll
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\bin\Debug\net8.0\RecipeBook.Models.pdb
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\obj\Debug\net8.0\RecipeBook.DL.csproj.AssemblyReference.cache
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\obj\Debug\net8.0\RecipeBook.DL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\obj\Debug\net8.0\RecipeBook.DL.AssemblyInfoInputs.cache
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\obj\Debug\net8.0\RecipeBook.DL.AssemblyInfo.cs
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\obj\Debug\net8.0\RecipeBook.DL.csproj.CoreCompileInputs.cache
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\obj\Debug\net8.0\RecipeBook.DL.sourcelink.json
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\obj\Debug\net8.0\RecipeBo.8DCB087D.Up2Date
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\obj\Debug\net8.0\RecipeBook.DL.dll
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\obj\Debug\net8.0\refint\RecipeBook.DL.dll
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\obj\Debug\net8.0\RecipeBook.DL.pdb
+D:\Microsoft\Visual Studio\PROEKT RECEPTURNIK\recepturnik\RecipeBook\MovieStoreC.DL\obj\Debug\net8.0\ref\RecipeBook.DL.dll
