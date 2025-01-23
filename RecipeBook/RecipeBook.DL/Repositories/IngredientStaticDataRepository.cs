@@ -5,18 +5,18 @@ using RecipeBook.Models.DTO;
 namespace RecipeBook.DL.Repositories
 {
     [Obsolete]
-    internal class ActorStaticDataRepository //: IActorRepository
+    internal class IngredientStaticDataRepository //: IIngredientRepository
     {
-        //public List<Actor> GetAll()
+        //public List<Ingredient> GetAll()
         //{
-        //    return StaticDb.Actors;
+        //    return StaticDb.Ingredients;
         //}
 
-        //public Actor? GetById(string id)
+        //public Ingredient? GetById(string id)
         //{
         //    if (string.IsNullOrEmpty(id)) return null;
 
-        //    return StaticDb.Actors
+        //    return StaticDb.Ingredients
         //        .FirstOrDefault(x => x.Id == id);
         //}
     }

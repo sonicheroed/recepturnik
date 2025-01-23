@@ -8,23 +8,23 @@ namespace RecipeBook.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class MoviesController : ControllerBase
+    public class RecipesController : ControllerBase
     {
-        private readonly IMoviesService _movieService;
+        private readonly IRecipeService _recipeService;
         private readonly IMapper _mapper;
 
-        public MoviesController(
-            IMoviesService movieService,
+        public RecipesController(
+            IRecipeService recipeService,
             IMapper mapper)
         {
-            _movieService = movieService;
+            _recipeService = recipeService;
             _mapper = mapper;
         }
 
         [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
-            var result = _movieService.GetAll();
+            var result = _recipeService.GetAll();
 
             if (result != null && result.Count > 0)
             {
@@ -45,22 +45,22 @@ namespace RecipeBook.Controllers
                 return BadRequest($"Wrong ID:{id}");
             }
 
-            var result = _movieService.GetById(id);
+            var result = _recipeService.GetById(id);
 
             if (result == null)
             {
-                return NotFound($"Movie with ID:{id} not found");
+                return NotFound($"Recipe with ID:{id} not found");
             }
 
             return Ok(result);
         }
 
         [HttpPost("Add")]
-        public IActionResult Add([FromBody]AddMovieRequest movie)
+        public IActionResult Add([FromBody]AddRecipeRequest recipe)
         {
-            var movieDto = _mapper.Map<Movie>(movie);
+            var recipeDto = _mapper.Map<Recipe>(recipe);
 
-            _movieService.Add(movieDto);
+            _recipeService.Add(recipeDto);
 
             return Ok();
         }
@@ -68,7 +68,7 @@ namespace RecipeBook.Controllers
         [HttpDelete("Delete")]
         public void Delete(int id)
         {
-            //return _movieService.GetById(id);
+            //return _recipeService.GetById(id);
         }
     }
 }

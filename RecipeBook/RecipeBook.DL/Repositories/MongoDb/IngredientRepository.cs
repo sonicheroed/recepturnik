@@ -8,14 +8,14 @@ using RecipeBook.Models.DTO;
 
 namespace RecipeBook.DL.Repositories.MongoDb
 {
-    internal class ActorRepository : IActorRepository
+    internal class IngredientRepository : IIngredientRepository
     {
-        public List<Actor> GetAll()
+        public List<Ingredients> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Actor? GetById(string id)
+        public Ingredients? GetById(string id)
         {
             throw new NotImplementedException();
         }

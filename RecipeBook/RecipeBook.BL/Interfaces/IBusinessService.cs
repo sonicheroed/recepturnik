@@ -4,6 +4,6 @@ namespace RecipeBook.BL.Interfaces
 {
     public interface IBusinessService
     {
-        List<MovieFullDetailsResponse> GetAllMovies();
+        List<RecipeFullDetailsResponse> GetAllRecipes();
     }
 }

@@ -15,9 +15,6 @@ namespace RecipeBook.Validators
                 .NotEmpty()
                 .MinimumLength(3)
                 .MaximumLength(250);
-            RuleFor(x => x.DateTime)
-                .NotNull()
-                .GreaterThan(DateTime.MaxValue);
         }
 
     }

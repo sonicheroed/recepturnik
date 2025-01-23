@@ -1,6 +1,6 @@
 ﻿namespace RecipeBook.Models.DTO
 {
-    public class Actor
+    public class Ingredients
     {
         public string Id { get; set; }
 

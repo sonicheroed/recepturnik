@@ -8,7 +8,7 @@ namespace RecipeBook.MapConfig
     {
         public static void Configure()
         {
-            TypeAdapterConfig<AddMovieRequest, Movie>
+            TypeAdapterConfig<AddRecipeRequest, Recipe>
                 .NewConfig();
         }
     }

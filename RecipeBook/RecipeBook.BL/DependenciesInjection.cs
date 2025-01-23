@@ -10,7 +10,7 @@ namespace RecipeBook.BL
             RegisterServices(this IServiceCollection services)
         {
             return services
-                        .AddSingleton<IMoviesService, MoviesService>()
+                        .AddSingleton<IRecipeService, RecipesService>()
                         .AddSingleton<IBusinessService, BusinessService>();
         }
     }

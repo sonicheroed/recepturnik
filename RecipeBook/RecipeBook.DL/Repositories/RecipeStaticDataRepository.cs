@@ -4,21 +4,21 @@ using RecipeBook.Models.DTO;
 
 namespace RecipeBook.DL.Repositories
 {
-    //internal class MovieStaticDataRepository : IMovieRepository
+    //internal class RecipeStaticDataRepository : IRecipeRepository
     //{
-    //    //public List<Movie> GetAll()
+    //    //public List<Recipe> GetAll()
     //    //{
-    //    //    return StaticDb.Movies;
+    //    //    return StaticDb.Recipes;
     //    //}
 
-    //    //public Movie? GetById(string id)
+    //    //public Recipe? GetById(string id)
     //    //{
     //    //    if (string.IsNullOrEmpty(id)) return null;
 
-    //    //    return StaticDb.Movies
+    //    //    return StaticDb.Recipes
     //    //        .FirstOrDefault(x => x.Id == id);
     //    //}
     //}
 
-   
+
 }

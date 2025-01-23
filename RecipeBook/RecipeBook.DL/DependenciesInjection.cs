@@ -12,10 +12,10 @@ namespace RecipeBook.DL
         {
             return
                 services
-                    .AddSingleton<IMovieRepository,
-                        MoviesMongoRepository>()
-                    .AddSingleton<IActorRepository,
-                        ActorRepository>();
+                    .AddSingleton<IRecipeRepository,
+                        RecipesMongoRepository>()
+                    .AddSingleton<IIngredientRepository,
+                        IngredientRepository>();
         }
     }
 }

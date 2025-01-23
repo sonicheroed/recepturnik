@@ -7,47 +7,47 @@ namespace RecipeBook.Tests
 {
     public class BusinessServiceUnitTests
     {
-        private readonly Mock<IMovieRepository> 
-            _movieRepositoryMock;
-        private readonly Mock<IActorRepository> 
-            _actorRepositoryMock;
+        private readonly Mock<IRecipeRepository> 
+            _recipeRepositoryMock;
+        private readonly Mock<IIngredientRepository> 
+            _ingredientRepositoryMock;
 
-        private List<Actor> _actors = new List<Actor>
+        private List<Ingredients> ingredients = new List<Ingredients>
         {
-            new Actor()
+            new Ingredients()
             {
                 Id = "157af604-7a4b-4538-b6a9-fed41a41cf3a",
-                Name = "Actor 1"
+                Name = "Ingredient 1"
             },
-            new Actor()
+            new Ingredients()
             {
                 Id = "baac2b19-bbd2-468d-bd3b-5bd18aba98d7",
-                Name = "Actor 2"
+                Name = "Ingredient 2"
             },
-            new Actor()
+            new Ingredients()
             {
                 Id = "5c93ba13-e803-49c1-b465-d471607e97b3",
-                Name = "Actor 3"
+                Name = "Ingredient 3"
             },
         };
 
-        private List<Movie> _movies = new List<Movie>()
+        private List<Recipe> _recipes = new List<Recipe>()
         {
-            new Movie()
+            new Recipe()
             {
                 Id = Guid.NewGuid().ToString(),
-                Title = "Movie 1",
-                Year = 2021,
-                Actors = [
+                Title = "Recipe 1",
+                Description = "Gotvi",
+                Ingredients = [
                     "157af604-7a4b-4538-b6a9-fed41a41cf3a",
                     "baac2b19-bbd2-468d-bd3b-5bd18aba98d7"]
             },
-            new Movie()
+            new Recipe()
             {
                 Id = Guid.NewGuid().ToString(),
-                Title = "Movie 2",
-                Year = 2022,
-                Actors = [
+                Title = "Recipe 2",
+                Description = "Sgotvi",
+                Ingredients = [
                     "157af604-7a4b-4538-b6a9-fed41a41cf3a",
                     "5c93ba13-e803-49c1-b465-d471607e97b3"
                 ]
@@ -56,32 +56,32 @@ namespace RecipeBook.Tests
 
         public BusinessServiceUnitTests()
         {
-            _movieRepositoryMock = new Mock<IMovieRepository>();
-            _actorRepositoryMock = new Mock<IActorRepository>();
+            _recipeRepositoryMock = new Mock<IRecipeRepository>();
+            _ingredientRepositoryMock = new Mock<IIngredientRepository>();
         }
 
         [Fact]
-        public void GetAllMovies_Ok()
+        public void GetAllRecipes_Ok()
         {
             //setup
             var expectedCount = 2;
 
-            _movieRepositoryMock.Setup(x => 
+            _recipeRepositoryMock.Setup(x => 
                     x.GetAll())
-                .Returns(_movies);
-            _actorRepositoryMock.Setup(x => 
+                .Returns(_recipes);
+            _ingredientRepositoryMock.Setup(x => 
                     x.GetById(It.IsAny<string>()))
                 .Returns((string id) =>
-                    _actors.FirstOrDefault(x => x.Id == id));
+                    ingredients.FirstOrDefault(x => x.Id == id));
 
             //inject
             var businessService = new BusinessService(
-                _movieRepositoryMock.Object,
-                _actorRepositoryMock.Object);
+                _recipeRepositoryMock.Object,
+                _ingredientRepositoryMock.Object);
 
             //act
             var result = 
-                businessService.GetAllMovies();
+                businessService.GetAllRecipes();
 
             //assert
             Assert.NotNull(result);

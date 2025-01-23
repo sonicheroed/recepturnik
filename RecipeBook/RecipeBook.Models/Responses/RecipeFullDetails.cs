@@ -2,14 +2,14 @@
 
 namespace RecipeBook.Models.Responses
 {
-    public class MovieFullDetailsResponse
+    public class RecipeFullDetailsResponse
     {
         public string Id { get; set; }
 
         public string Title { get; set; } = string.Empty;
 
-        public int Year { get; set; }
+        public string Description { get; set; }
 
-        public List<Actor> Actors { get; set; } = new List<Actor>();
+        public List<Ingredients> Ingredients { get; set; } = new List<Ingredients>();
     }
 }

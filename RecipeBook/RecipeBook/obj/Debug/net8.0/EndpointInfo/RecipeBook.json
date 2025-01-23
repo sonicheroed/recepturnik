@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/Business/GetAllDetailedMovies": {
+    "/Business/GetAllDetailedRecipes": {
       "get": {
         "tags": [
           "Business"
@@ -48,10 +48,10 @@
         }
       }
     },
-    "/Movies/GetAll": {
+    "/Recipes/GetAll": {
       "get": {
         "tags": [
-          "Movies"
+          "Recipes"
         ],
         "responses": {
           "200": {
@@ -60,10 +60,10 @@
         }
       }
     },
-    "/Movies/GetById": {
+    "/Recipes/GetById": {
       "get": {
         "tags": [
-          "Movies"
+          "Recipes"
         ],
         "parameters": [
           {
@@ -121,26 +121,26 @@
         }
       }
     },
-    "/Movies/Add": {
+    "/Recipes/Add": {
       "post": {
         "tags": [
-          "Movies"
+          "Recipes"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AddMovieRequest"
+                "$ref": "#/components/schemas/AddRecipeRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/AddMovieRequest"
+                "$ref": "#/components/schemas/AddRecipeRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/AddMovieRequest"
+                "$ref": "#/components/schemas/AddRecipeRequest"
               }
             }
           }
@@ -152,10 +152,10 @@
         }
       }
     },
-    "/Movies/Delete": {
+    "/Recipes/Delete": {
       "delete": {
         "tags": [
-          "Movies"
+          "Recipes"
         ],
         "parameters": [
           {
@@ -177,16 +177,16 @@
   },
   "components": {
     "schemas": {
-      "AddMovieRequest": {
+      "AddRecipeRequest": {
         "type": "object",
         "properties": {
           "title": {
             "type": "string",
             "nullable": true
           },
-          "year": {
-            "type": "integer",
-            "format": "int32"
+          "description": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -228,10 +228,6 @@
           "text": {
             "type": "string",
             "nullable": true
-          },
-          "dateTime": {
-            "type": "string",
-            "format": "date-time"
           }
         },
         "additionalProperties": false

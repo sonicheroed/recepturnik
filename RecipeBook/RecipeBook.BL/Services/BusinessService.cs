@@ -6,40 +6,40 @@ namespace RecipeBook.BL.Services
 {
     internal class BusinessService : IBusinessService
     {
-        private readonly IMovieRepository _movieRepository;
-        private readonly IActorRepository _actorRepository;
+        private readonly IRecipeRepository _recipeRepository;
+        private readonly IIngredientRepository _ingredientRepository;
 
         public BusinessService(
-            IMovieRepository movieRepository,
-            IActorRepository actorRepository)
+            IRecipeRepository recipeRepository,
+            IIngredientRepository ingredientRepository)
         {
-            _movieRepository = movieRepository;
-            _actorRepository = actorRepository;
+            _recipeRepository = recipeRepository;
+            _ingredientRepository = ingredientRepository;
         }
 
-        public List<MovieFullDetailsResponse> GetAllMovies()
+        public List<RecipeFullDetailsResponse> GetAllRecipes()
         {
-            var result = new List<MovieFullDetailsResponse>();
+            var result = new List<RecipeFullDetailsResponse>();
 
-            var movies = _movieRepository.GetAll();
+            var recipes = _recipeRepository.GetAll();
 
-            foreach (var movie in movies)
+            foreach (var recipe in recipes)
             {
-                var detailedMovie = new MovieFullDetailsResponse()
+                var detailedRecipe = new RecipeFullDetailsResponse()
                 {
-                    Id = movie.Id,
-                    Title = movie.Title,
-                    Year = movie.Year
+                    Id = recipe.Id,
+                    Title = recipe.Title,
+                    Description = recipe.Description
                 };
 
-                foreach (var actorId in movie.Actors)
+                foreach (var ingredientId in recipe.Ingredients)
                 {
-                    var actor = _actorRepository.GetById(actorId);
-                    if (actor == null) continue;
-                    detailedMovie.Actors.Add(actor);
+                    var ingredient = _ingredientRepository.GetById(ingredientId);
+                    if (ingredient == null) continue;
+                    detailedRecipe.Ingredients.Add(ingredient);
                 }
 
-                result.Add(detailedMovie);
+                result.Add(detailedRecipe);
             }
 
             return result;

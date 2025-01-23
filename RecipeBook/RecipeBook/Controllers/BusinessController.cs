@@ -9,19 +9,19 @@ namespace RecipeBook.Controllers
     [Route("[controller]")]
     public class BusinessController : ControllerBase
     {
-        private readonly IBusinessService _movieService;
+        private readonly IBusinessService _recipeService;
 
-        public BusinessController(IBusinessService movieService)
+        public BusinessController(IBusinessService recipeService)
 
         {
-            _movieService = movieService;
+            _recipeService = recipeService;
         }
 
-        [HttpGet("GetAllDetailedMovies")]
-        public IActionResult GetAllDetailedMovies()
+        [HttpGet("GetAllDetailedRecipes")]
+        public IActionResult GetAllDetailedRecipes()
         {
             var result =
-                _movieService.GetAllMovies();
+                _recipeService.GetAllRecipes();
 
             if (result != null && result.Count > 0)
             {
@@ -32,9 +32,8 @@ namespace RecipeBook.Controllers
         }
 
         [HttpPost("Test")]
-        public IActionResult Test([FromBody] TestRequest movie)
+        public IActionResult Test([FromBody] TestRequest recipe)
         {
-            
             return Ok();
         }
     }
@@ -44,7 +43,5 @@ namespace RecipeBook.Controllers
         public int MagicNumber { get; set; }
 
         public string Text { get; set; }
-
-        public DateTime DateTime { get; set; }
     }
 }

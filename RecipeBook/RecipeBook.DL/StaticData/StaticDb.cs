@@ -4,49 +4,49 @@ namespace RecipeBook.DL.StaticData
 {
     //internal static class StaticDb
     //{
-    //    public static List<Actor> Actors { get; set; } = new List<Actor>()
+    //    public static List<Ingredient> Ingredients { get; set; } = new List<Ingredient>()
     //    {
-    //        new Actor()
+    //        new Ingredient()
     //        {
     //            Id = 1,
-    //            Name = "Actor1"
+    //            Name = "Morkov"
     //        },
-    //        new Actor()
+    //        new Ingredient()
     //        {
     //            Id = 2,
-    //            Name = "Actor2"
+    //            Name = "Domat"
     //        },
-    //        new Actor()
+    //        new Ingredient()
     //        {
     //            Id = 3,
-    //            Name = "Actor3"
+    //            Name = "Kartof"
     //        }
     //    };
 
-        //public static List<Movie> Movies { get; set; } = new List<Movie>()
-        //{
-        //    new Movie()
-        //    {
-        //        Id = 1,
-        //        Title = "Test",
-        //        Year = 2016,
-        //        Actors = new List<int>(){1, 2}
-        //    },
-        //    new Movie()
-        //    {
-        //        Id = 2,
-        //        Title = "Test2",
-        //        Year = 2017,
-        //        Actors = new List<int>(){2, 3}
-        //    },
-        //    new Movie()
-        //    {
-        //        Id = 3,
-        //        Title = "Test3",
-        //        Year = 2018,
-        //        Actors = new List<int>(){1, 3}
-        //    }
-        //};
+    //    public static List<Recipe> Recipes { get; set; } = new List<Recipe>()
+    //    {
+    //    new Recipe()
+    //    {
+    //        Id = 1,
+    //        Title = "Test",
+    //        Description = "Razburkai",
+    //        Ingredients = new List<int>(){1, 2}
+    //    },
+    //    new Recipe()
+    //    {
+    //        Id = 2,
+    //        Title = "Test2",
+    //        Description = "Smesi",
+    //        Ingredients = new List<int>(){2, 3}
+    //    },
+    //    new Recipe()
+    //    {
+    //        Id = 3,
+    //        Title = "Test3",
+    //        Description = "Pechi",
+    //        Ingredients = new List<int>(){1, 3}
+    //    }
+    //};
 
     //}
 }

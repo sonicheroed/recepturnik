@@ -1,13 +1,13 @@
 ﻿namespace RecipeBook.Models.DTO
 {
-    public class Movie
+    public class Recipe
     {
         public string Id { get; set; }
 
         public string Title { get; set; } = string.Empty;
 
-        public int Year { get; set; }
+        public string Description { get; set; }
 
-        public List<string> Actors { get; set; }
+        public List<string> Ingredients { get; set; }
     }
 }

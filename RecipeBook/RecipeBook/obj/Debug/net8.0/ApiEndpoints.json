@@ -1,8 +1,8 @@
 [
   {
     "ContainingType": "RecipeBook.Controllers.BusinessController",
-    "Method": "GetAllDetailedMovies",
-    "RelativePath": "Business/GetAllDetailedMovies",
+    "Method": "GetAllDetailedRecipes",
+    "RelativePath": "Business/GetAllDetailedRecipes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -18,7 +18,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "movie",
+        "Name": "recipe",
         "Type": "RecipeBook.Controllers.TestRequest",
         "IsRequired": true
       }
@@ -26,25 +26,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RecipeBook.Controllers.MoviesController",
+    "ContainingType": "RecipeBook.Controllers.RecipesController",
     "Method": "Add",
-    "RelativePath": "Movies/Add",
+    "RelativePath": "Recipes/Add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "movie",
-        "Type": "RecipeBook.Models.Requests.AddMovieRequest",
+        "Name": "recipe",
+        "Type": "RecipeBook.Models.Requests.AddRecipeRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RecipeBook.Controllers.MoviesController",
+    "ContainingType": "RecipeBook.Controllers.RecipesController",
     "Method": "Delete",
-    "RelativePath": "Movies/Delete",
+    "RelativePath": "Recipes/Delete",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -64,9 +64,9 @@
     ]
   },
   {
-    "ContainingType": "RecipeBook.Controllers.MoviesController",
+    "ContainingType": "RecipeBook.Controllers.RecipesController",
     "Method": "GetAll",
-    "RelativePath": "Movies/GetAll",
+    "RelativePath": "Recipes/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -74,9 +74,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RecipeBook.Controllers.MoviesController",
+    "ContainingType": "RecipeBook.Controllers.RecipesController",
     "Method": "GetById",
-    "RelativePath": "Movies/GetById",
+    "RelativePath": "Recipes/GetById",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

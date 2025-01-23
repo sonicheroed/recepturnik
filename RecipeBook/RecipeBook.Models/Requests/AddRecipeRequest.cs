@@ -1,9 +1,9 @@
 ﻿namespace RecipeBook.Models.Requests
 {
-    public class AddMovieRequest
+    public class AddRecipeRequest
     {
         public string Title { get; set; } = string.Empty;
 
-        public int Year { get; set; }
+        public string Description { get; set; }
     }
 }
