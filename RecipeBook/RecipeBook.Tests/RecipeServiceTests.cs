@@ -66,13 +66,10 @@ namespace RecipeBook.Tests
         {
             //Arrange
             var recipeId = _recipes[0].Id;
-            var ingredientId = _ingredients[0].Id;
 
             _recipeRepositoryMock.Setup(x => x.GetById(It.IsAny<string>()))
                 .Returns((string id) => _recipes.FirstOrDefault(r => r.Id == id));
 
-            _ingredientRepositoryMock.Setup(x => x.GetById(It.IsAny<string>()))
-                .Returns((string id) => _ingredients.FirstOrDefault(r => r.Id == id));
 
             var loggerMock = new Mock<ILogger<RecipesService>>();
             ILogger<RecipesService> logger = loggerMock.Object;
@@ -84,13 +81,10 @@ namespace RecipeBook.Tests
                 _ingredientRepositoryMock.Object);
 
             var result = recipeService.GetById(recipeId);
-            var result2 = recipeService.GetById(ingredientId);
 
             //Assert
             Assert.NotNull(result);
-            Assert.NotNull(result2);
             Assert.Equal(recipeId, result.Id);
-            Assert.Equal(ingredientId, result2.Id);
         }
 
         [Fact]

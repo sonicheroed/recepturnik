@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecipeBook.BL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2dfaf0e73d11609eb19e3e7624d70badaae524a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee4b1cead7b2c50dc0b089f0f0904ffcb6c4ccf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecipeBook.BL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecipeBook.BL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
