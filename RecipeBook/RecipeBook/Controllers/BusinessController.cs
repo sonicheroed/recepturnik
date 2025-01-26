@@ -31,6 +31,27 @@ namespace RecipeBook.Controllers
             return NotFound();
         }
 
+
+        [HttpPost("AddRecipe")]
+        public IActionResult AddRecipe([FromBody] Recipe recipe)
+        {
+            if (recipe == null)
+            {
+                return BadRequest("Recipe cannot be null.");
+            }
+
+            try
+            {
+                _recipeService.AddRecipe(recipe);
+                return CreatedAtAction(nameof(GetAllDetailedRecipes), new { id = recipe.Id }, recipe);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Error");
+            }
+        }
+
+
         [HttpPost("Test")]
         public IActionResult Test([FromBody] TestRequest recipe)
         {

@@ -17,17 +17,20 @@ namespace RecipeBook.Tests
             new Ingredients()
             {
                 Id = "157af604-7a4b-4538-b6a9-fed41a41cf3a",
-                Name = "Ingredient 1"
+                Name = "Ingredient 1",
+                Calories = 120
             },
             new Ingredients()
             {
                 Id = "baac2b19-bbd2-468d-bd3b-5bd18aba98d7",
-                Name = "Ingredient 2"
+                Name = "Ingredient 2",
+                Calories = 150
             },
             new Ingredients()
             {
                 Id = "5c93ba13-e803-49c1-b465-d471607e97b3",
-                Name = "Ingredient 3"
+                Name = "Ingredient 3",
+                Calories = 100
             },
         };
 

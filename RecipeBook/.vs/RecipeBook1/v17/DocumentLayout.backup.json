@@ -3,35 +3,113 @@
   "WorkspaceRootPath": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8156FF06-D8B5-47DB-A02A-CF1DAA3F7404}|RecipeBook.Tests\\RecipeBook.Tests.csproj|d:\\microsoft\\visual studio\\proekt recepturnik\\recepturnik\\recipebook\\recipebook.tests\\recipeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8156FF06-D8B5-47DB-A02A-CF1DAA3F7404}|RecipeBook.Tests\\RecipeBook.Tests.csproj|solutionrelative:recipebook.tests\\recipeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C3B166B-9450-4A40-82D4-D5B4E77632C0}|RecipeBook.DL\\RecipeBook.DL.csproj|d:\\microsoft\\visual studio\\proekt recepturnik\\recepturnik\\recipebook\\recipebook.dl\\repositories\\mongodb\\ingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3B166B-9450-4A40-82D4-D5B4E77632C0}|RecipeBook.DL\\RecipeBook.DL.csproj|solutionrelative:recipebook.dl\\repositories\\mongodb\\ingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3B166B-9450-4A40-82D4-D5B4E77632C0}|RecipeBook.DL\\RecipeBook.DL.csproj|d:\\microsoft\\visual studio\\proekt recepturnik\\recepturnik\\recipebook\\recipebook.dl\\repositories\\mongodb\\recipesmongorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3B166B-9450-4A40-82D4-D5B4E77632C0}|RecipeBook.DL\\RecipeBook.DL.csproj|solutionrelative:recipebook.dl\\repositories\\mongodb\\recipesmongorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3B166B-9450-4A40-82D4-D5B4E77632C0}|RecipeBook.DL\\RecipeBook.DL.csproj|d:\\microsoft\\visual studio\\proekt recepturnik\\recepturnik\\recipebook\\recipebook.dl\\interfaces\\iingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3B166B-9450-4A40-82D4-D5B4E77632C0}|RecipeBook.DL\\RecipeBook.DL.csproj|solutionrelative:recipebook.dl\\interfaces\\iingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9588314F-4BB5-45A0-AA65-AC3F7753B3A2}|RecipeBook.BL\\RecipeBook.BL.csproj|d:\\microsoft\\visual studio\\proekt recepturnik\\recepturnik\\recipebook\\recipebook.bl\\interfaces\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9588314F-4BB5-45A0-AA65-AC3F7753B3A2}|RecipeBook.BL\\RecipeBook.BL.csproj|solutionrelative:recipebook.bl\\interfaces\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9588314F-4BB5-45A0-AA65-AC3F7753B3A2}|RecipeBook.BL\\RecipeBook.BL.csproj|d:\\microsoft\\visual studio\\proekt recepturnik\\recepturnik\\recipebook\\recipebook.bl\\services\\recipesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9588314F-4BB5-45A0-AA65-AC3F7753B3A2}|RecipeBook.BL\\RecipeBook.BL.csproj|solutionrelative:recipebook.bl\\services\\recipesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RecipesMongoRepository.cs",
+              "DocumentMoniker": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.DL\\Repositories\\MongoDb\\RecipesMongoRepository.cs",
+              "RelativeDocumentMoniker": "RecipeBook.DL\\Repositories\\MongoDb\\RecipesMongoRepository.cs",
+              "ToolTip": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.DL\\Repositories\\MongoDb\\RecipesMongoRepository.cs",
+              "RelativeToolTip": "RecipeBook.DL\\Repositories\\MongoDb\\RecipesMongoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T19:36:31.652Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RecipeServiceTests.cs",
-              "DocumentMoniker": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.Tests\\RecipeServiceTests.cs",
-              "RelativeDocumentMoniker": "RecipeBook.Tests\\RecipeServiceTests.cs",
-              "ToolTip": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.Tests\\RecipeServiceTests.cs",
-              "RelativeToolTip": "RecipeBook.Tests\\RecipeServiceTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Title": "IngredientRepository.cs",
+              "DocumentMoniker": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.DL\\Repositories\\MongoDb\\IngredientRepository.cs",
+              "RelativeDocumentMoniker": "RecipeBook.DL\\Repositories\\MongoDb\\IngredientRepository.cs",
+              "ToolTip": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.DL\\Repositories\\MongoDb\\IngredientRepository.cs",
+              "RelativeToolTip": "RecipeBook.DL\\Repositories\\MongoDb\\IngredientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T14:40:46.337Z",
+              "WhenOpened": "2025-01-26T19:27:17.489Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IIngredientRepository.cs",
+              "DocumentMoniker": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.DL\\Interfaces\\IIngredientRepository.cs",
+              "RelativeDocumentMoniker": "RecipeBook.DL\\Interfaces\\IIngredientRepository.cs",
+              "ToolTip": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.DL\\Interfaces\\IIngredientRepository.cs",
+              "RelativeToolTip": "RecipeBook.DL\\Interfaces\\IIngredientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T19:27:19.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RecipesService.cs",
+              "DocumentMoniker": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.BL\\Services\\RecipesService.cs",
+              "RelativeDocumentMoniker": "RecipeBook.BL\\Services\\RecipesService.cs",
+              "ToolTip": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.BL\\Services\\RecipesService.cs",
+              "RelativeToolTip": "RecipeBook.BL\\Services\\RecipesService.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAcwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T18:42:48.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRecipeService.cs",
+              "DocumentMoniker": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.BL\\Interfaces\\IRecipeService.cs",
+              "RelativeDocumentMoniker": "RecipeBook.BL\\Interfaces\\IRecipeService.cs",
+              "ToolTip": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.BL\\Interfaces\\IRecipeService.cs",
+              "RelativeToolTip": "RecipeBook.BL\\Interfaces\\IRecipeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T18:42:41.739Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

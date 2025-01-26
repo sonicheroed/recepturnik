@@ -11,5 +11,7 @@ namespace RecipeBook.DL.Interfaces
         void Add(Recipe recipe);
 
         void Update(Recipe recipe);
+
+        void Delete(string recipeId);
     }
 }

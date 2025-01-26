@@ -10,6 +10,10 @@ namespace RecipeBook.BL.Interfaces
 
         void Add(Recipe recipe);
 
+        void Delete(string recipeId);
+
         void AddIngredientsToRecipe(string recipeId, string ingredient);
+
+        void DeleteIngredientFromRecipe(string recipeId, string ingredientId);
     }
 }

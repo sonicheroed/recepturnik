@@ -46,8 +46,6 @@ namespace RecipeBook.DL.Repositories.MongoDb
                 _logger.LogError("Recipe is null");
                 return;
             }
-
-            
             try
             {
                 _recipesCollection.InsertOne(recipe);
@@ -60,7 +58,42 @@ namespace RecipeBook.DL.Repositories.MongoDb
 
         public void Update(Recipe recipe)
         {
-            _recipesCollection.ReplaceOne(r => r.Id == recipe.Id, recipe);
+            if (recipe == null)
+            {
+                _logger.LogError("Recipe is null");
+                return;
+            }
+
+            try
+            {
+                _recipesCollection.ReplaceOne(r => r.Id == recipe.Id, recipe);
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Failed to update recipe");
+            }
+        }
+
+        public void Delete(string recipeId)
+        {
+            if (string.IsNullOrEmpty(recipeId))
+            {
+                _logger.LogError("Recipe ID is null or empty");
+                return;
+            }
+            try
+            {
+                var result = _recipesCollection.DeleteOne(r => r.Id == recipeId);
+
+                if (result.DeletedCount == 0)
+                {
+                    _logger.LogWarning($"No recipe found with ID: {recipeId}");
+                }
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Failed to delete recipe");
+            }
         }
     }
 }

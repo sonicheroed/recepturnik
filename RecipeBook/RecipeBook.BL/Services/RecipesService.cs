@@ -36,6 +36,18 @@ namespace RecipeBook.BL.Services
 
         }
 
+        public void Delete(string recipeId)
+        {
+            var recipe = _recipeRepository.GetById(recipeId);
+
+            if (recipe == null)
+            {
+                _logger.LogError("Recipe is null");
+                return;
+            }
+            _recipeRepository.Delete(recipeId);
+        }
+
         public void AddIngredientsToRecipe(string recipeId, string ingredientId)
         {
             if (string.IsNullOrEmpty(recipeId) || string.IsNullOrEmpty(ingredientId))
@@ -76,6 +88,39 @@ namespace RecipeBook.BL.Services
             _recipeRepository.Update(recipe);
         }
 
+        public void DeleteIngredientFromRecipe(string recipeId, string ingredientId)
+        {
+            if (string.IsNullOrEmpty(recipeId) || string.IsNullOrEmpty(ingredientId))
+            {
+                _logger.LogError("RecipeId or IngredientId is null");
+                return;
+            }
+
+            if (!Guid.TryParse(recipeId, out _) || !Guid.TryParse(ingredientId, out _))
+            {
+                _logger.LogError("RecipeId or IngredientId is not valid");
+                return;
+            }
+
+            var recipe = _recipeRepository.GetById(recipeId);
+
+            if (recipe == null)
+            {
+                _logger.LogError("Recipe not found");
+                return;
+            }
+
+            if (recipe.Ingredients == null || !recipe.Ingredients.Contains(ingredientId))
+            {
+                _logger.LogError("Ingredient not found in the recipe");
+                return;
+            }
+
+            recipe.Ingredients.Remove(ingredientId);
+
+            _recipeRepository.Update(recipe);
+        }
+
         public List<Recipe> GetAll()
         {
             return _recipeRepository.GetAll();
@@ -87,7 +132,5 @@ namespace RecipeBook.BL.Services
 
             return _recipeRepository.GetById(id);
         }
-
-
     }
 }

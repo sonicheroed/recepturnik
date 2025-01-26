@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "RecipeBook.Controllers.BusinessController",
+    "Method": "AddRecipe",
+    "RelativePath": "Business/AddRecipe",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipe",
+        "Type": "RecipeBook.Models.DTO.Recipe",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecipeBook.Controllers.BusinessController",
     "Method": "GetAllDetailedRecipes",
     "RelativePath": "Business/GetAllDetailedRecipes",
     "HttpMethod": "GET",
@@ -50,18 +66,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "recipeId",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "RecipeBook.Controllers.RecipesController",

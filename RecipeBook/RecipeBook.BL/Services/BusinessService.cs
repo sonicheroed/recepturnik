@@ -1,5 +1,6 @@
 ﻿using RecipeBook.BL.Interfaces;
 using RecipeBook.DL.Interfaces;
+using RecipeBook.Models.DTO;
 using RecipeBook.Models.Responses;
 
 namespace RecipeBook.BL.Services
@@ -43,6 +44,23 @@ namespace RecipeBook.BL.Services
             }
 
             return result;
+        }
+
+        public void AddRecipe(Recipe recipe)
+        {
+            if (recipe == null)
+            {
+                throw new ArgumentNullException(nameof(recipe), "Recipe cannot be null.");
+            }
+            try
+            {    
+                recipe.Id = Guid.NewGuid().ToString();
+                _recipeRepository.Add(recipe);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

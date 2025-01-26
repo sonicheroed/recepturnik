@@ -56,7 +56,7 @@ namespace RecipeBook.Controllers
         }
 
         [HttpPost("Add")]
-        public IActionResult Add([FromBody]AddRecipeRequest recipe)
+        public IActionResult Add([FromBody] AddRecipeRequest recipe)
         {
             var recipeDto = _mapper.Map<Recipe>(recipe);
 
@@ -66,9 +66,25 @@ namespace RecipeBook.Controllers
         }
 
         [HttpDelete("Delete")]
-        public void Delete(int id)
+        public IActionResult Delete(string recipeId)
         {
-            //return _recipeService.GetById(id);
+            if (string.IsNullOrEmpty(recipeId))
+            {
+                return BadRequest("Recipe ID cannot be null or empty.");
+            }
+            try
+            {
+                _recipeService.Delete(recipeId);
+                return NoContent();
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound($"Recipe with ID {recipeId} not found.");
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "Internal server error.");
+            }
         }
     }
 }
