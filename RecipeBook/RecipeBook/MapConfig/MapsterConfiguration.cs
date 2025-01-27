@@ -10,6 +10,9 @@ namespace RecipeBook.MapConfig
         {
             TypeAdapterConfig<AddRecipeRequest, Recipe>
                 .NewConfig();
+
+            TypeAdapterConfig<AddIngredientRequest, Ingredients>
+                .NewConfig();
         }
     }
 }

@@ -15,12 +15,10 @@ namespace RecipeBook
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            //Add configurations
             builder.Services.Configure<MongoDbConfiguration>(
                 builder.Configuration
                     .GetSection(nameof(MongoDbConfiguration)));
 
-            // Add services to the container.
             builder.Services
                 .RegisterRepositories()
                 .RegisterServices();
@@ -29,8 +27,9 @@ namespace RecipeBook
 
             builder.Services.AddControllers();
 
-            builder.Services
-                .AddValidatorsFromAssemblyContaining<TestValidator>();
+            builder.Services.AddValidatorsFromAssemblyContaining<TestValidator>();
+            builder.Services.AddValidatorsFromAssemblyContaining<RecipeValidator>();
+            builder.Services.AddValidatorsFromAssemblyContaining<IngredientValidator>();
             builder.Services.AddFluentValidationAutoValidation();
 
             builder.Services.AddSwaggerGen();
@@ -47,11 +46,7 @@ namespace RecipeBook
                 app.UseSwaggerUI();
             }
 
-
-            // Configure the HTTP request pipeline.
-
             app.UseAuthorization();
-
 
             app.MapControllers();
 

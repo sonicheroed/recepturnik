@@ -37,6 +37,7 @@ namespace RecipeBook.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
         [HttpGet("GetById")]
         public IActionResult GetById(string id)
         {
@@ -99,7 +100,6 @@ namespace RecipeBook.Controllers
             {
                 return BadRequest("Recipe ID cannot be null or empty.");
             }
-
             try
             {
                 _recipeService.Update(recipe);
@@ -108,6 +108,60 @@ namespace RecipeBook.Controllers
             catch (KeyNotFoundException)
             {
                 return NotFound($"Recipe with ID {recipe.Id} not found.");
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "Internal server error.");
+            }
+        }
+
+        [HttpPost("AddIngredients")]
+        public IActionResult AddIngredientsToRecipe(string recipeId, [FromBody] string ingredient)
+        {
+            if (string.IsNullOrEmpty(recipeId))
+            {
+                return BadRequest("Recipe ID cannot be null or empty.");
+            }
+
+            if (string.IsNullOrEmpty(ingredient))
+            {
+                return BadRequest("Ingredient cannot be null or empty.");
+            }
+            try
+            {
+                _recipeService.AddIngredientsToRecipe(recipeId, ingredient);
+                return StatusCode(200, "Ingredient added to recipe.");
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound($"Recipe with ID {recipeId} not found.");
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "Internal server error.");
+            }
+        }
+
+        [HttpDelete("DeleteIngredient")]
+        public IActionResult DeleteIngredientFromRecipe(string recipeId, string ingredientId)
+        {
+            if (string.IsNullOrEmpty(recipeId))
+            {
+                return BadRequest("Recipe ID cannot be null or empty.");
+            }
+
+            if (string.IsNullOrEmpty(ingredientId))
+            {
+                return BadRequest("Ingredient ID cannot be null or empty.");
+            }
+            try
+            {
+                _recipeService.DeleteIngredientFromRecipe(recipeId, ingredientId);
+                return StatusCode(200, "Ingredient removed from recipe.");
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound($"Recipe with ID {recipeId} or Ingredient with ID {ingredientId} not found.");
             }
             catch (Exception e)
             {

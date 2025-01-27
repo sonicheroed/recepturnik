@@ -16,6 +16,5 @@ namespace RecipeBook.Validators
                 .MinimumLength(3)
                 .MaximumLength(250);
         }
-
     }
 }

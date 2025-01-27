@@ -11,7 +11,8 @@ namespace RecipeBook.BL
         {
             return services
                         .AddSingleton<IRecipeService, RecipesService>()
-                        .AddSingleton<IBusinessService, BusinessService>();
+                        .AddSingleton<IBusinessService, BusinessService>()
+                        .AddSingleton<IIngredientService, IngredientsService>();
         }
     }
 }

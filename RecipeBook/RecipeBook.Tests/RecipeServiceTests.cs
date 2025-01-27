@@ -18,19 +18,19 @@ namespace RecipeBook.Tests
             new Ingredients()
             {
                 Id = "157af604-7a4b-4538-b6a9-fed41a41cf3a",
-                Name = "Ingredient 1",
+                Name = "Milk",
                 Calories = 120
             },
             new Ingredients()
             {
                 Id = "baac2b19-bbd2-468d-bd3b-5bd18aba98d7",
-                Name = "Ingredient 2",
+                Name = "Sugar",
                 Calories = 150
             },
             new Ingredients()
             {
                 Id = "5c93ba13-e803-49c1-b465-d471607e97b3",
-                Name = "Ingredient 3",
+                Name = "Egg",
                 Calories = 100
             },
         };
@@ -40,8 +40,8 @@ namespace RecipeBook.Tests
             new Recipe()
             {
                 Id = Guid.NewGuid().ToString(),
-                Title = "Recipe 1",
-                Description = "Gotvi",
+                Title = "Milk dessert",
+                Description = "Milk dessert with rice",
                 Ingredients = [
                     "157af604-7a4b-4538-b6a9-fed41a41cf3a",
                     "baac2b19-bbd2-468d-bd3b-5bd18aba98d7"]
@@ -49,8 +49,8 @@ namespace RecipeBook.Tests
             new Recipe()
             {
                 Id = Guid.NewGuid().ToString(),
-                Title = "Recipe 2",
-                Description = "Sgotvi",
+                Title = "Musaka",
+                Description = "Musaka with potatoes",
                 Ingredients = [
                     "157af604-7a4b-4538-b6a9-fed41a41cf3a",
                     "5c93ba13-e803-49c1-b465-d471607e97b3"
