@@ -1,4 +1,5 @@
-﻿using RecipeBook.BL.Interfaces;
+﻿using Microsoft.Extensions.Logging;
+using RecipeBook.BL.Interfaces;
 using RecipeBook.DL.Interfaces;
 using RecipeBook.Models.DTO;
 using RecipeBook.Models.Responses;
@@ -9,12 +10,15 @@ namespace RecipeBook.BL.Services
     {
         private readonly IRecipeRepository _recipeRepository;
         private readonly IIngredientRepository _ingredientRepository;
+        private readonly ILogger<BusinessService> _logger;
 
         public BusinessService(
             IRecipeRepository recipeRepository,
+            ILogger<BusinessService> logger,
             IIngredientRepository ingredientRepository)
         {
             _recipeRepository = recipeRepository;
+            _logger = logger;
             _ingredientRepository = ingredientRepository;
         }
 
@@ -57,9 +61,9 @@ namespace RecipeBook.BL.Services
                 recipe.Id = Guid.NewGuid().ToString();
                 _recipeRepository.Add(recipe);
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                _logger.LogError(e, "Failed to update ingredient");
             }
         }
     }

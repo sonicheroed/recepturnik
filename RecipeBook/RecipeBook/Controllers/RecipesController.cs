@@ -86,5 +86,33 @@ namespace RecipeBook.Controllers
                 return StatusCode(500, "Internal server error.");
             }
         }
+
+        [HttpPut("Update")]
+        public IActionResult Update([FromBody] Recipe recipe)
+        {
+            if (recipe == null)
+            {
+                return BadRequest("Recipe cannot be null.");
+            }
+
+            if (string.IsNullOrEmpty(recipe.Id))
+            {
+                return BadRequest("Recipe ID cannot be null or empty.");
+            }
+
+            try
+            {
+                _recipeService.Update(recipe);
+                return StatusCode(200, "Recipe Updated.");
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound($"Recipe with ID {recipe.Id} not found.");
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "Internal server error.");
+            }
+        }
     }
 }

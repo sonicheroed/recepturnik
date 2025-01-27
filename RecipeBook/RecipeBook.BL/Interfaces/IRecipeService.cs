@@ -15,5 +15,7 @@ namespace RecipeBook.BL.Interfaces
         void AddIngredientsToRecipe(string recipeId, string ingredient);
 
         void DeleteIngredientFromRecipe(string recipeId, string ingredientId);
+
+        void Update(Recipe recipe);
     }
 }

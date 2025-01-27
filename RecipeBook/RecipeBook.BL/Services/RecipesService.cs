@@ -132,5 +132,15 @@ namespace RecipeBook.BL.Services
 
             return _recipeRepository.GetById(id);
         }
+
+        public void Update(Recipe recipe)
+        {
+            if (recipe == null)
+            {
+                throw new ArgumentNullException(nameof(recipe), "Recipe cannot be null.");
+            }
+
+            _recipeRepository.Update(recipe);
+        }
     }
 }

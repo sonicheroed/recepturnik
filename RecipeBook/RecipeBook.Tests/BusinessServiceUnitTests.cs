@@ -2,6 +2,7 @@ using Moq;
 using RecipeBook.BL.Services;
 using RecipeBook.DL.Interfaces;
 using RecipeBook.Models.DTO;
+using Microsoft.Extensions.Logging;
 
 namespace RecipeBook.Tests
 {
@@ -11,6 +12,7 @@ namespace RecipeBook.Tests
             _recipeRepositoryMock;
         private readonly Mock<IIngredientRepository> 
             _ingredientRepositoryMock;
+        private readonly Mock<ILogger<BusinessService>> _loggerMock;
 
         private List<Ingredients> ingredients = new List<Ingredients>
         {
@@ -61,6 +63,7 @@ namespace RecipeBook.Tests
         {
             _recipeRepositoryMock = new Mock<IRecipeRepository>();
             _ingredientRepositoryMock = new Mock<IIngredientRepository>();
+            _loggerMock = new Mock<ILogger<BusinessService>>();
         }
 
         [Fact]
@@ -80,6 +83,7 @@ namespace RecipeBook.Tests
             //inject
             var businessService = new BusinessService(
                 _recipeRepositoryMock.Object,
+                _loggerMock.Object,
                 _ingredientRepositoryMock.Object);
 
             //act
