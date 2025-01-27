@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9588314F-4BB5-45A0-AA65-AC3F7753B3A2}|RecipeBook.BL\\RecipeBook.BL.csproj|d:\\microsoft\\visual studio\\proekt recepturnik\\recepturnik\\recipebook\\recipebook.bl\\services\\businessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9588314F-4BB5-45A0-AA65-AC3F7753B3A2}|RecipeBook.BL\\RecipeBook.BL.csproj|solutionrelative:recipebook.bl\\services\\businessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BusinessService.cs",
+              "DocumentMoniker": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.BL\\Services\\BusinessService.cs",
+              "RelativeDocumentMoniker": "RecipeBook.BL\\Services\\BusinessService.cs",
+              "ToolTip": "D:\\Microsoft\\Visual Studio\\PROEKT RECEPTURNIK\\recepturnik\\RecipeBook\\RecipeBook.BL\\Services\\BusinessService.cs",
+              "RelativeToolTip": "RecipeBook.BL\\Services\\BusinessService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T17:51:18.347Z",
+              "EditorCaption": ""
             }
           ]
         },

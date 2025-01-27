@@ -25,7 +25,6 @@ namespace RecipeBook.BL.Services
         public List<RecipeFullDetailsResponse> GetAllRecipes()
         {
             var result = new List<RecipeFullDetailsResponse>();
-
             var recipes = _recipeRepository.GetAll();
 
             foreach (var recipe in recipes)
@@ -34,19 +33,22 @@ namespace RecipeBook.BL.Services
                 {
                     Id = recipe.Id,
                     Title = recipe.Title,
-                    Description = recipe.Description
+                    Description = recipe.Description,
+                    Ingredients = new List<Ingredients>()
                 };
-
-                foreach (var ingredientId in recipe.Ingredients)
+                if (recipe.Ingredients != null)
                 {
-                    var ingredient = _ingredientRepository.GetById(ingredientId);
-                    if (ingredient == null) continue;
-                    detailedRecipe.Ingredients.Add(ingredient);
+                    foreach (var ingredientId in recipe.Ingredients)
+                    {
+                        var ingredient = _ingredientRepository.GetById(ingredientId);
+                        if (ingredient != null)
+                        {
+                            detailedRecipe.Ingredients.Add(ingredient);
+                        }
+                    }
                 }
-
                 result.Add(detailedRecipe);
             }
-
             return result;
         }
 
