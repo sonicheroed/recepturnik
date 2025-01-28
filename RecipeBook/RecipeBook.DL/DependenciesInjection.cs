@@ -12,10 +12,8 @@ namespace RecipeBook.DL
         {
             return
                 services
-                    .AddSingleton<IRecipeRepository,
-                        RecipesMongoRepository>()
-                    .AddSingleton<IIngredientRepository,
-                        IngredientRepository>();
+                    .AddSingleton<IRecipeRepository, RecipesMongoRepository>()
+                    .AddSingleton<IIngredientRepository, IngredientRepository>();
         }
     }
 }

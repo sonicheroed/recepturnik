@@ -30,9 +30,12 @@ namespace RecipeBook.Controllers
             {
                 return Ok(result);
             }
-
             return NotFound();
         }
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
         [HttpGet("GetById")]
         public IActionResult GetById(string id)
@@ -41,13 +44,11 @@ namespace RecipeBook.Controllers
             {
                 return BadRequest("Ingredient ID cannot be null or empty.");
             }
-
             var ingredient = _ingredientService.GetById(id);
             if (ingredient == null)
             {
                 return NotFound($"Ingredient with ID {id} not found.");
             }
-
             return Ok(ingredient);
         }
 
@@ -58,7 +59,6 @@ namespace RecipeBook.Controllers
             {
                 return BadRequest("Ingredient request cannot be null.");
             }
-
             var ingredient = _mapper.Map<Ingredients>(request);
             try
             {

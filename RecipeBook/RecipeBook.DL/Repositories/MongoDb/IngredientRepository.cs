@@ -20,10 +20,8 @@ namespace RecipeBook.DL.Repositories.MongoDb
         public IngredientRepository(IOptionsMonitor<MongoDbConfiguration> mongoConfig, ILogger<IngredientRepository> logger)
         {
             _logger = logger;
-            var client =
-                new MongoClient(mongoConfig.CurrentValue.ConnectionString);
-            var database = client.GetDatabase(
-                mongoConfig.CurrentValue.DatabaseName);
+            var client = new MongoClient(mongoConfig.CurrentValue.ConnectionString);
+            var database = client.GetDatabase(mongoConfig.CurrentValue.DatabaseName);
             _ingredientsCollection = database.GetCollection<Ingredients>("Ingredients");
         }
 

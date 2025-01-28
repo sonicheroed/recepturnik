@@ -20,17 +20,17 @@ namespace RecipeBook.Controllers
         [HttpGet("GetAllDetailedRecipes")]
         public IActionResult GetAllDetailedRecipes()
         {
-            var result =
-                _recipeService.GetAllRecipes();
-
+            var result = _recipeService.GetAllRecipes();
             if (result != null && result.Count > 0)
             {
                 return Ok(result);
             }
-
             return NotFound();
         }
 
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
         [HttpPost("AddRecipe")]
         public IActionResult AddRecipe([FromBody] Recipe recipe)
@@ -39,7 +39,6 @@ namespace RecipeBook.Controllers
             {
                 return BadRequest("Recipe cannot be null.");
             }
-
             try
             {
                 _recipeService.AddRecipe(recipe);

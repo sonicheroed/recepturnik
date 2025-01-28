@@ -69,23 +69,6 @@ namespace RecipeBook.BL.Services
             }
         }
 
-        public void Delete(string ingredientId)
-        {
-            if (string.IsNullOrEmpty(ingredientId))
-            {
-                _logger.LogError("Ingredient ID cannot be null or empty.");
-                return;
-            }
-            try
-            {
-                _ingredientRepository.Delete(ingredientId);
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(e, "Failed to delete ingredient");
-            }
-        }
-
         public void Update(Ingredients ingredient)
         {
             if (ingredient == null)
@@ -100,6 +83,23 @@ namespace RecipeBook.BL.Services
             catch (Exception e)
             {
                 _logger.LogError(e, "Failed to update ingredient");
+            }
+        }
+
+        public void Delete(string ingredientId)
+        {
+            if (string.IsNullOrEmpty(ingredientId))
+            {
+                _logger.LogError("Ingredient ID cannot be null or empty.");
+                return;
+            }
+            try
+            {
+                _ingredientRepository.Delete(ingredientId);
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Failed to delete ingredient");
             }
         }
     }

@@ -52,13 +52,13 @@ namespace RecipeBook.BL.Services
         {
             if (string.IsNullOrEmpty(recipeId) || string.IsNullOrEmpty(ingredientId))
             {
-                _logger.LogError("RecipeId or Ingredient is null");
+                _logger.LogError("RecipeId or IngredientId is null");
                 return;
             }
 
             if (Guid.TryParse(recipeId, out _) || Guid.TryParse(ingredientId, out _))
             {
-                _logger.LogError("RecipeId or Ingredient is not valid");
+                _logger.LogError("RecipeId or IngredientId is not valid");
                 return;
             }
 

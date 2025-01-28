@@ -18,11 +18,8 @@ namespace RecipeBook.DL.Repositories.MongoDb
             ILogger<RecipesMongoRepository> logger)
         {
             _logger = logger;
-
-            var client = 
-                new MongoClient(mongoConfig.CurrentValue.ConnectionString);
-            var database = client.GetDatabase(
-                mongoConfig.CurrentValue.DatabaseName);
+            var client = new MongoClient(mongoConfig.CurrentValue.ConnectionString);
+            var database = client.GetDatabase(mongoConfig.CurrentValue.DatabaseName);
             _recipesCollection = database.GetCollection<Recipe>("RecipesDb");
         }
 
@@ -63,7 +60,6 @@ namespace RecipeBook.DL.Repositories.MongoDb
                 _logger.LogError("Recipe is null");
                 return;
             }
-
             try
             {
                 _recipesCollection.ReplaceOne(r => r.Id == recipe.Id, recipe);

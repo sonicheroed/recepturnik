@@ -9,6 +9,5 @@ namespace RecipeBook.BL.Interfaces
         List<RecipeFullDetailsResponse> GetAllRecipes();
 
         public void AddRecipe(Recipe recipe);
-        
     }
 }

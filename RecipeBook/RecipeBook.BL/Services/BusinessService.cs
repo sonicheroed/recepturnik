@@ -26,7 +26,6 @@ namespace RecipeBook.BL.Services
         {
             var result = new List<RecipeFullDetailsResponse>();
             var recipes = _recipeRepository.GetAll();
-
             foreach (var recipe in recipes)
             {
                 var detailedRecipe = new RecipeFullDetailsResponse()
@@ -65,7 +64,7 @@ namespace RecipeBook.BL.Services
             }
             catch (Exception e)
             {
-                _logger.LogError(e, "Failed to update ingredient");
+                _logger.LogError(e, "Failed to add recipe");
             }
         }
     }
